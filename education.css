@@ -52,12 +52,13 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: lightgreen !important;
+  color: rgb(13, 197, 218) !important;
 }
 
 .navbar-nav .nav-link.active {
-  color: rgb(172, 0, 118) !important;
+  color: rgb(40, 61, 247) !important;
 }
+
 
 @media (max-width: 992px) {
   .navbar-collapse {
