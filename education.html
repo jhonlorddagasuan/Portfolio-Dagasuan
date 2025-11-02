@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="education.css">
+    <title>Education</title>
+</head>
+<body>
+
+
+   <header class="main-header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <!-- Logo + Title -->
+     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="https://i.pinimg.com/1200x/48/91/e7/4891e767e90dd4c799e8fa908cbf875b.jpg"
+          alt="Logo" width="40" height="40" class="rounded-circle">
+        <span class="site-title">Portfolio</span>
+      </a>
+
+
+      <!-- Hamburger Button (appears only on phone) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links (collapse into dropdown on phone) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="Skills.html"><i class="fas fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="Project.html"><i class="fas fa-folder-open"></i> Project</a></li>
+           <li class="nav-item">
+  <a class="nav-link" href="contact.html">
+    <i class="fa-solid fa-phone"></i> Contact
+  </a>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+  <div class="container-home">
+  <h2 class="section-title">My Schools</h2> 
+  
+  <h1 class="name">Valerie Thea</h1>
+  
+  <input 
+    type="text" 
+    id="search-input" 
+    class="search-bar" 
+    placeholder="Search for a school..." 
+  />
+
+  <div id="student-list" class="student-list"></div>
+</div>
+
+
+  <script src="applet.js"></script>
+
+    <footer class="main-footer">
+    <p>© 2025 Portfolio | Designed by Tutty</p>
+  </footer>
+
+  <div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 100, "density": { "enable": true, "value_area": 900 } },
+    "color": { "value": ["#00ffff", "#00ccff", "#00e6e6"] },
+    "shape": { "type": "circle" },
+    "opacity": {
+      "value": 0.7,
+      "random": true,
+      "anim": { "enable": true, "speed": 0.6, "opacity_min": 0.3 }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": { "enable": true, "speed": 2, "size_min": 0.5 }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 130,
+      "color": "#00ffff",
+      "opacity": 0.3,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "attract": { "enable": false }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": { "enable": true, "mode": "grab" },
+      "onclick": { "enable": true, "mode": "push" },
+      "resize": true
+    },
+    "modes": {
+      "grab": { "distance": 180, "line_linked": { "opacity": 0.5 } },
+      "push": { "particles_nb": 3 }
+    }
+  },
+  "retina_detect": true,
+  "background": {
+    "color": "#050914",
+    "image": "",
+    "position": "center",
+    "repeat": "no-repeat",
+    "size": "cover"
+  }
+});
+</script>
+
+
+</body>
+</html>
