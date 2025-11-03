@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="videos.css">
+  <title>Tutty's Videos</title>
+</head>
+
+<body>
+   <header class="main-header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Logo + Title -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="https://i.pinimg.com/1200x/48/91/e7/4891e767e90dd4c799e8fa908cbf875b.jpg"
+          alt="Logo" width="40" height="40" class="rounded-circle">
+        <span class="site-title">Portfolio</span>
+      </a>
+
+
+      <!-- Hamburger Button (appears only on phone) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links (collapse into dropdown on phone) -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="Skills.html"><i class="fas fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="Project.html"><i class="fas fa-folder-open"></i> Project</a></li>
+              <li class="nav-item">
+  <a class="nav-link" href="contact.html">
+    <i class="fa-solid fa-phone"></i> Contact
+  </a>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+ <section class="videos-section">
+  <h2 class="video-section-title">TUTTY'S Works</h2>
+
+  <div class="video-container">
+    <div class="card">
+      <video controls>
+        <source src="HulingSandali.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <div class="card-body">
+        <h5 class="card-title"><b>Huling Sandali</b></h5>
+        <p class="card-text">
+          <b>"HULING SANDALI"</b> is about that <i>painfull last moment</i> with someone you love. Kadtong time nga gusto pa unta nimo siya i-hold, but need na nimo siya e let go. It's a song about love pain, and the memories nga di nimo ma forget bisan pag pila na ka tuig na nag bulag mo.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="Friends.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <div class="card-body">
+        <h5 class="card-title"><b>Back to Friends</b></h5>
+        <p class="card-text">
+          <b>“Back to Friends”</b> is a song about two people who used to share something special but now have to return to being just friends. It’s about pretending everything’s fine even when it still hurts — trying to move on while keeping the connection alive, just in a different way.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="multo.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <div class="card-body">
+        <h5 class="card-title"><b>Multo</b></h5>
+        <p class="card-text">
+          <b>"MULTO"</b> — A song about someone who’s no longer there, yet still lingers in every memory, every silence, every place you once shared. It’s about loving someone who’s already gone, but whose presence refuses to fade — like a ghost that stays not to scare you, but to remind you of what used to be.
+        </p>
+      </div>
+    </div>
+
+    <div class="card small-video">
+      <video controls>
+        <source src="heather.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <div class="card-body">
+        <h5 class="card-title"><b>Heather</b></h5>
+        <p class="card-text">
+          A song about the quiet kind of heartbreak — when the person you love chooses someone else, and all you can do is watch from afar. It’s the pain of comparing yourself to someone who seems perfect in their eyes, wishing you were her, but knowing you never will be.
+        </p>
+      </div>
+    </div>
+
+     <div class="card small-video">
+      <video controls>
+        <source src="drive.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <div class="card-body">
+        <h5 class="card-title"><b>Drive</b></h5>
+        <p class="card-text">
+          “Drive” by Ed Sheeran is a song about reminiscing on a passionate relationship, expressing longing and nostalgia for moments shared while driving together — symbolizing freedom, love, and emotional connection.
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  const videos = document.querySelectorAll('video');
+
+  videos.forEach(video => {
+    video.addEventListener('play', () => {
+      videos.forEach(v => {
+        if (v !== video) v.pause();
+      });
+    });
+  });
+</script>
+
+  <footer class="footer">
+    <p>© 2025 Portfolio | Designed by Tutty</p>
+  </footer>
+</body>
+</html>
